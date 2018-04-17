@@ -25,7 +25,7 @@ const schoolState = {
       const school_background = game.add.sprite(game.world.centerX, game.world.centerY, 'school_background');
     school_background.anchor.set(0.5);
     school_background.inputEnabled = true;
-    school_background.input.useHandCursor = true; 
+    /*school_background.input.useHandCursor = true; 
    
      /* // Add the button image to the middle of the screen and enable input
     const button = game.add.sprite(game.world.centerX, game.world.centerY, 'button');
@@ -38,10 +38,11 @@ const schoolState = {
       game.state.start('menu');
     }, this);*/
       
-    const button_1 = game.add.sprite(300, 400, 'button_1');
+    const button_1 = game.add.sprite(400,45, 'button_1');
     button_1.anchor.set(0.5);
     button_1.inputEnabled = true;
     button_1.input.useHandCursor = true;  // Change cursor style on mouseover
+    button_1.scale.setTo(1.2,0.5);
 
     button_1.events.onInputDown.add(function () {
       game.state.start('confession');

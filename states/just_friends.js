@@ -1,9 +1,9 @@
 /**
- * confession.js 
+ * justFriends.js 
  *
- * This state represents the start of a relationship
+ * This state represents if you don't choose the choice that gets you in a relationship
  */
-const confessionState = {
+const justFriendsState = {
 
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
@@ -17,6 +17,8 @@ const confessionState = {
    * Initializes variables and instantiates objects
    */
   create: function () {
+      console.log("justFriends")
+      
       var i = game.add.image(game.world.centerX, game.world.centerY, 'conf')
     i.anchor.set(0.5)
       

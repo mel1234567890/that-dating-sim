@@ -17,6 +17,7 @@ const game = new Phaser.Game(width, height, Phaser.AUTO, "example");
 game.state.add("menu", menuState);
 game.state.add("school", schoolState);
 game.state.add("confession", confessionState);
+game.state.add("justFriends", justFriendsState);
 
 // Start the menu state
 game.state.start("menu");
