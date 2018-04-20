@@ -25,7 +25,7 @@ const schoolState = {
       const school_background = game.add.sprite(game.world.centerX, game.world.centerY, 'school_background');
     school_background.anchor.set(0.5);
     school_background.inputEnabled = true;
-    /*school_background.input.useHandCursor = true; 
+    school_background.input.useHandCursor = true; 
    
      /* // Add the button image to the middle of the screen and enable input
     const button = game.add.sprite(game.world.centerX, game.world.centerY, 'button');
@@ -43,9 +43,19 @@ const schoolState = {
     button_1.inputEnabled = true;
     button_1.input.useHandCursor = true;  // Change cursor style on mouseover
     button_1.scale.setTo(1.2,0.5);
+      
+        game.add.text(
+      125, 25,  // x, y position
+      "Summer has ended and time for a new school year to begin", 
+      { fontSize: "20px", fill: "#fff" }
+            );
 
-    button_1.events.onInputDown.add(function () {
+    school_background.events.onInputDown.add(function () {
       game.state.start('confession');
+    }, this);
+    
+    button_1.events.onInputDown.add(function () {
+      game.state.start('confession');   
     }, this);
   },
 

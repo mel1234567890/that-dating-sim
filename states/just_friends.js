@@ -3,13 +3,13 @@
  *
  * This state represents if you don't choose the choice that gets you in a relationship
  */
-const justFriendsState = {
+const justFriendsState   = {
 
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
-    game.load.image('conf', 'assets/confession_background.jpg');
+    game.load.image('walk', 'assets/walk_home.jpg');
  
   },
 
@@ -19,7 +19,7 @@ const justFriendsState = {
   create: function () {
       console.log("justFriends")
       
-      var i = game.add.image(game.world.centerX, game.world.centerY, 'conf')
+      var i = game.add.image(game.world.centerX, game.world.centerY, 'walk')
     i.anchor.set(0.5)
       
       const button_1 = game.add.sprite(400, 45, 'button_1');
@@ -27,9 +27,15 @@ const justFriendsState = {
     button_1.inputEnabled = true;
     button_1.input.useHandCursor = true;  // Change cursor style on mouseover
     button_1.scale.setTo(1.2,0.5);
+      
+      game.add.text(
+      125, 25,  // x, y position
+      "I walked home by myself, but I hope we end up becoming friends a least", 
+      { fontSize: "20px", fill: "#fff" }
+            );
 
     button_1.events.onInputDown.add(function () {
-      game.state.start('justFriends');
+      game.state.start('');
     }, this);
 
     /*// Add some text

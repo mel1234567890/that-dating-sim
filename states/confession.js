@@ -22,11 +22,41 @@ const confessionState = {
       
       const button_1 = game.add.sprite(400, 45, 'button_1');
     button_1.anchor.set(0.5);
-    button_1.inputEnabled = true;
-    button_1.input.useHandCursor = true;  // Change cursor style on mouseover
+    /*button_1.inputEnabled = true;*/
+    /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
     button_1.scale.setTo(1.2,0.5);
-
-    button_1.events.onInputDown.add(function () {
+      
+      game.add.text(
+      125, 25,  // x, y position
+      "The next day passed by and after school...a girl confessed to me", 
+      { fontSize: "20px", fill: "#fff" }
+            );
+      
+      const button_2 = game.add.sprite(210, 500, 'button_1');
+    button_2.anchor.set(0.5);
+    button_2.inputEnabled = true;
+    button_2.input.useHandCursor = true;  // Change cursor style on mouseover
+    button_2.scale.setTo(0.4,0.5);
+      
+      game.add.text(
+      125,470,  // x, y position
+      "I'm sorry but can\n we just be friends?", 
+      { fontSize: "20px", fill: "#fff" }
+            );
+      
+      const button_3 = game.add.sprite(540, 500, 'button_1');
+    button_3.anchor.set(0.5);
+    button_3.inputEnabled = true;
+    button_3.input.useHandCursor = true;  // Change cursor style on mouseover
+    button_3.scale.setTo(0.4,0.5);
+      
+      game.add.text(
+      450,480,  // x, y position
+      "I guess we can try?", 
+      { fontSize: "20px", fill: "#fff" }
+            );
+      
+     button_2.events.onInputDown.add(function () {
       game.state.start('justFriends');
     }, this);
 
