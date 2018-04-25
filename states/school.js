@@ -1,7 +1,7 @@
 /**
- * game.js 
+ * school.js 
  *
- * This state represents the in-game action
+ * This state represents the start of the game and where the love story began
  */
 const schoolState = {
 

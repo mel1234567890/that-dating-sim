@@ -1,15 +1,15 @@
 /**
- * first_date.js 
+ * movie.js 
  *
- * This state represents the first date
+ * This state represents your choice on going to a movie theatre
  */
-const firstDateState = {
+const iceCreamState   = {
 
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
-    game.load.image('date', 'assets/park.jpg');
+    game.load.image('walk', 'assets/walk_home.jpg');
  
   },
 
@@ -17,50 +17,24 @@ const firstDateState = {
    * Initializes variables and instantiates objects
    */
   create: function () {
-      var i = game.add.image(game.world.centerX, game.world.centerY, 'date')
+      console.log("justFriends")
+      
+      var i = game.add.image(game.world.centerX, game.world.centerY, 'walk')
     i.anchor.set(0.5)
       
       const button_1 = game.add.sprite(400, 45, 'button_1');
     button_1.anchor.set(0.5);
-    /*button_1.inputEnabled = true;*/
-    /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
+    button_1.inputEnabled = true;
+    button_1.input.useHandCursor = true;  // Change cursor style on mouseover
     button_1.scale.setTo(1.2,0.5);
       
       game.add.text(
-      125, 25,  // x, y position
-      "It was our first date. Taiga asked, \"What should we do?\"", 
+      125, 9.5,  // x, y position
+      "I walked home by myself, but I hope we end up becoming\n friends a least", 
       { fontSize: "20px", fill: "#fff" }
             );
-      
-      const button_2 = game.add.sprite(210, 500, 'button_1');
-    button_2.anchor.set(0.5);
-    button_2.inputEnabled = true;
-    button_2.input.useHandCursor = true;  // Change cursor style on mouseover
-    button_2.scale.setTo(0.4,0.5);
-      
-      game.add.text(
-      125,475,  // x, y position
-      "Uhhhh,we could\n watch a movie", 
-      { fontSize: "20px", fill: "#fff" }
-            );
-      
-      const button_3 = game.add.sprite(540, 500, 'button_1');
-    button_3.anchor.set(0.5);
-    button_3.inputEnabled = true;
-    button_3.input.useHandCursor = true;  // Change cursor style on mouseover
-    button_3.scale.setTo(0.4,0.5);
-      
-      game.add.text(
-      435,480,  // x, y position
-      "Let's go get ice cream", 
-      { fontSize: "20px", fill: "#fff" }
-            );
-      
-     button_2.events.onInputDown.add(function () {
-      game.state.start('');
-    }, this);
-      
-       button_3.events.onInputDown.add(function () {
+
+    button_1.events.onInputDown.add(function () {
       game.state.start('');
     }, this);
 
