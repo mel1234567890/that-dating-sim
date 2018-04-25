@@ -27,7 +27,7 @@ const confessionState = {
     button_1.scale.setTo(1.2,0.5);
       
       game.add.text(
-      125, 25,  // x, y position
+      100, 25,  // x, y position
       "The next day passed by and after school...a girl confessed to me", 
       { fontSize: "20px", fill: "#fff" }
             );

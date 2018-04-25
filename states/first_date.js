@@ -9,7 +9,7 @@ const confessionState = {
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
-    game.load.image('conf', 'assets/confession_background.jpg');
+    game.load.image('date', 'assets/park.jpg');
  
   },
 
@@ -17,7 +17,7 @@ const confessionState = {
    * Initializes variables and instantiates objects
    */
   create: function () {
-      var i = game.add.image(game.world.centerX, game.world.centerY, 'conf')
+      var i = game.add.image(game.world.centerX, game.world.centerY, 'date')
     i.anchor.set(0.5)
       
       const button_1 = game.add.sprite(400, 45, 'button_1');
@@ -28,7 +28,7 @@ const confessionState = {
       
       game.add.text(
       125, 25,  // x, y position
-      "The next day passed by and after school...a girl confessed to me", 
+      "It was our first date. Taiga asked, what should we do?", 
       { fontSize: "20px", fill: "#fff" }
             );
       
@@ -40,7 +40,7 @@ const confessionState = {
       
       game.add.text(
       125,470,  // x, y position
-      "I'm sorry but can\n we just be friends?", 
+      "Uhhhh,we could watch a movie", 
       { fontSize: "20px", fill: "#fff" }
             );
       
@@ -52,7 +52,7 @@ const confessionState = {
       
       game.add.text(
       450,480,  // x, y position
-      "I guess we can try?", 
+      "Let's go get ice cream", 
       { fontSize: "20px", fill: "#fff" }
             );
       

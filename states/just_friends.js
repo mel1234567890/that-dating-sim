@@ -29,8 +29,8 @@ const justFriendsState   = {
     button_1.scale.setTo(1.2,0.5);
       
       game.add.text(
-      125, 25,  // x, y position
-      "I walked home by myself, but I hope we end up becoming friends a least", 
+      125, 9.5,  // x, y position
+      "I walked home by myself, but I hope we end up becoming\n friends a least", 
       { fontSize: "20px", fill: "#fff" }
             );
 
