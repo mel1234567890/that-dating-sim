@@ -1,7 +1,7 @@
 /**
- * movie.js 
+ * ice_cream.js 
  *
- * This state represents your choice on going to a movie theatre
+ * This state represents if you choose to go get ice cream
  */
 const iceCreamState   = {
 
@@ -9,7 +9,7 @@ const iceCreamState   = {
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
-    game.load.image('walk', 'assets/walk_home.jpg');
+    game.load.image('icecream', 'assets/ice_cream.jpg');
  
   },
 
@@ -17,24 +17,27 @@ const iceCreamState   = {
    * Initializes variables and instantiates objects
    */
   create: function () {
-      console.log("justFriends")
+      console.log("iceCream")
       
-      var i = game.add.image(game.world.centerX, game.world.centerY, 'walk')
-    i.anchor.set(0.5)
+      const icecream= game.add.sprite(400, 45, 'icecream');
+    icecream.anchor.set(0.5);
+    /*button_1.inputEnabled = true;*/
+    /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
+    icecream.scale.setTo(1.4,1);
       
-      const button_1 = game.add.sprite(400, 45, 'button_1');
-    button_1.anchor.set(0.5);
-    button_1.inputEnabled = true;
-    button_1.input.useHandCursor = true;  // Change cursor style on mouseover
-    button_1.scale.setTo(1.2,0.5);
+      const text_button = game.add.sprite(400, 45, 'text_button');
+    text_button.anchor.set(0.5);
+    /*button_1.inputEnabled = true;*/
+    /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
+    text_button.scale.setTo(1.4,1);
       
-      game.add.text(
+    game.add.text(
       125, 9.5,  // x, y position
-      "I walked home by myself, but I hope we end up becoming\n friends a least", 
+      "We got ice cream and seeing her smile\n was a beautiful sight", 
       { fontSize: "20px", fill: "#fff" }
             );
 
-    button_1.events.onInputDown.add(function () {
+    text_button.events.onInputDown.add(function () {
       game.state.start('');
     }, this);
 
