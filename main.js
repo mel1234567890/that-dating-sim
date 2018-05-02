@@ -23,5 +23,5 @@ game.state.add("iceCream", iceCreamState);
 game.state.add("movie", movieState);
 
 // Start the menu state
-//game.state.start("menu");
-game.state.start("justFriends");
+game.state.start("menu");
+
