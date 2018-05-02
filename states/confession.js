@@ -26,12 +26,8 @@ const confessionState = {
     /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
     text_button.scale.setTo(1.4,1);
       
-      const taiga = game.add.sprite(400, 45, 'taiga');
-    text_button.anchor.set(0.5);
-    /*button_1.inputEnabled = true;*/
-    /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
-    text_button.scale.setTo(1.4,1);
-      
+      const taiga = game.add.sprite(275, 298.5, 'taiga');
+ 
       game.add.text(
       100, 25,  // x, y position
       "The next day passed by and after school...a girl confessed to me", 
