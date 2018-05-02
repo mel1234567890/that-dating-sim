@@ -10,7 +10,7 @@ const confessionState = {
    */
   preload: function () {
     game.load.image('conf', 'assets/confession_background.jpg');
- 
+    game.load.image('taiga', 'assets/Taiga.png'); 
   },
 
   /**
@@ -21,6 +21,12 @@ const confessionState = {
     i.anchor.set(0.5)
       
       const text_button = game.add.sprite(400, 45, 'text_button');
+    text_button.anchor.set(0.5);
+    /*button_1.inputEnabled = true;*/
+    /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
+    text_button.scale.setTo(1.4,1);
+      
+      const taiga = game.add.sprite(400, 45, 'taiga');
     text_button.anchor.set(0.5);
     /*button_1.inputEnabled = true;*/
     /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/

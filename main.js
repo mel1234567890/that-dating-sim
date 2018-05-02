@@ -22,6 +22,6 @@ game.state.add("firstDate", firstDateState);
 game.state.add("iceCream", iceCreamState);
 game.state.add("movie", movieState);
 
-
 // Start the menu state
-game.state.start("menu");
+//game.state.start("menu");
+game.state.start("justFriends");

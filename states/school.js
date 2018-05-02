@@ -9,8 +9,10 @@ const schoolState = {
    * Loads game assets (images, sounds, tilemaps, etc)
    */
   preload: function () {
-    game.load.image('school_background','assets/school_background.jpg')
+      
     game.load.image('text_button', 'assets/text_button.jpeg');
+    game.load.image('button_1','assets/button_1.png');
+    game.load.image('school_background','assets/school_background.jpg');   
   },
 
   /**

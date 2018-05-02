@@ -8,7 +8,10 @@ const iceCreamState   = {
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
    */
-  preload: function () {
+  preload: function () {   
+    game.load.image('text_button', 'assets/text_button.jpeg');
+    game.load.image('button_1','assets/button_1.png');
+
     game.load.image('icecream', 'assets/ice_cream.jpg');
  
   },
@@ -23,7 +26,7 @@ const iceCreamState   = {
     icecream.anchor.set(0.5);
     /*button_1.inputEnabled = true;*/
     /*button_1.input.useHandCursor = true;  // Change cursor style on mouseover*/
-    icecream.scale.setTo(1.4,1);
+    icecream.scale.setTo(1.2,3.4);
       
       const text_button = game.add.sprite(400, 45, 'text_button');
     text_button.anchor.set(0.5);

@@ -8,8 +8,12 @@ const movieState   = {
   /**
    * Loads game assets (images, sounds, tilemaps, etc)
    */
-  preload: function () {
+  preload: function () {    
+    game.load.image('text_button', 'assets/text_button.jpeg');
+    game.load.image('button_1','assets/button_1.png');
+
     game.load.image('walk', 'assets/walk_home.jpg');
+    
  
   },
 
