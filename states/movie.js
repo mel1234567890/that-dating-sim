@@ -28,7 +28,7 @@ const movieState   = {
     movie_button.anchor.set(0.5);
     movie_button.inputEnabled = true;
     movie_button.input.useHandCursor = true;  // Change cursor style on mouseover*/
-    movie_button.scale.setTo(1.4,1);
+    /*movie_button.scale.setTo(1.4,1);*/
       
       const text_button = game.add.sprite(400, 45, 'text_button');
     text_button.anchor.set(0.5);
