@@ -24,7 +24,7 @@ game.state.add("movie", movieState);
 game.state.add("walkingHome", walkingHomeState);
 game.state.add("hug_1", hug_1State);
 game.state.add("kiss_1", kiss_1State);
-game.state.add("hug_2", hug_2State);
+
 
 // Start the menu state
 game.state.start("menu");

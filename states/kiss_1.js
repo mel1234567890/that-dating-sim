@@ -36,6 +36,21 @@ const kiss_1State   = {
             );
       
       const taiga = game.add.sprite(275, 298.5, 'taiga');
+      
+      const justFriendsBtn = game.add.sprite(397,320, 'button_1');
+    justFriendsBtn.anchor.set(0.5);
+    justFriendsBtn.inputEnabled = true;
+    justFriendsBtn.input.useHandCursor = true;  // Change cursor style on mouseover*/
+    justFriendsBtn.scale.setTo(0.4,0.5);
+       
+      game.add.text(
+      325,300,  // x, y position
+      "Return to Menu", 
+      { fontSize: "20px", fill: "#fff" }
+            );
+      justFriendsBtn.events.onInputDown.add(function () {
+      game.state.start('menu');
+    }, this);
        
    
   },

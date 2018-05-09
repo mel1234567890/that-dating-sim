@@ -38,9 +38,6 @@ const hug_2State   = {
       
       const taiga = game.add.sprite(275, 298.5, 'taiga');
        
-    walk.events.onInputDown.add(function () {
-      game.state.start('');
-    }, this);
   },
 
   /** 

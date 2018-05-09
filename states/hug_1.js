@@ -24,7 +24,7 @@ const hug_1State   = {
       var i = game.add.image(game.world.centerX, game.world.centerY, 'walk')
     i.anchor.set(0.5)
       
-      const walk = game.add.sprite('walk')
+      const walk = game.add.sprite('walk_home.jpg')
       
       const text_button = game.add.sprite(400, 45, 'text_button');
     text_button.anchor.set(0.5);
@@ -32,15 +32,24 @@ const hug_1State   = {
       
       game.add.text(
       110, 9.5,  // x, y position
-      "Taiga sighs but you ask what happened. She then pouts at you.\n You ask what happened. Unexpectedly she goes in for the kiss.", 
+      "Taiga sighs and you guys leave. You won't dat her anytime\n soon. Game Over!!!", 
       { fontSize: "20px", fill: "#fff" }
             );
-      
-      const taiga = game.add.sprite(275, 298.5, 'taiga');
+      const justFriendsBtn = game.add.sprite(397,320, 'button_1');
+    justFriendsBtn.anchor.set(0.5);
+    justFriendsBtn.inputEnabled = true;
+    justFriendsBtn.input.useHandCursor = true;  // Change cursor style on mouseover*/
+    justFriendsBtn.scale.setTo(0.4,0.5);
        
-    walk.events.onInputDown.add(function () {
-      game.state.start('');
+      game.add.text(
+      325,300,  // x, y position
+      "Return to Menu", 
+      { fontSize: "20px", fill: "#fff" }
+            );
+      justFriendsBtn.events.onInputDown.add(function () {
+      game.state.start('menu');
     }, this);
+      
   },
 
   /** 
